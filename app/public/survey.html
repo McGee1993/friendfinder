@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+    <title>Survey</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Survey Questions</h1>
+        <hr>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header"><strong>
+                            About you</strong>
+                    </div>
+                    <div class="card-body">
+                        <form role="form" id="surveyForm">
+                            <div class="form-group">
+                                <label for="name">Name (Required)</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="photo">Link to Photo Image (Required)</label>
+                                <input type="text" class="form-control" id="photo">
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h3><strong>Question 1</strong></h3>
+                                    <h4>You rarely act without a plan.</h4>
+                                    <select class="chosen-select" id="q1">
+                                        <option value></option>
+                                        <option value="1">1 (strongly disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (strongly agree)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h3><strong>Question 2</strong></h3>
+                                    <h4>You prefer the outdoors to the indoors.
+                                    </h4>
+                                    <select class="chosen-select" id="q2">
+                                        <option value></option>
+                                        <option value="1">1 (strongly disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (strongly agree)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h3><strong>Question 3</strong></h3>
+                                    <h4>You consider yourself a layed back person.
+                                    </h4>
+                                    <select class="chosen-select" id="q3">
+                                        <option value></option>
+                                        <option value="1">1 (strongly disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (strongly agree)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h3><strong>Question 4</strong></h3>
+                                    <h4>You value the journey over the destination.
+                                    </h4>
+                                    <select class="chosen-select" id="q4">
+                                        <option value></option>
+                                        <option value="1">1 (strongly disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (strongly agree)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h3><strong>Question 5</strong></h3>
+                                    <h4>You thrive in large groups.
+                                    </h4>
+                                    <select class="chosen-select" id="q5">
+                                        <option value></option>
+                                        <option value="1">1 (strongly disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (strongly agree)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h3><strong>Question 6</strong></h3>
+                                    <h4>You prefer a crowded bar to an evening at home.
+                                    </h4>
+                                    <select class="chosen-select" id="q6">
+                                        <option value></option>
+                                        <option value="1">1 (strongly disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (strongly agree)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h3><strong>Question 7</strong></h3>
+                                    <h4>You believe in honesty above all.
+                                    </h4>
+                                    <select class="chosen-select" id="q7">
+                                        <option value></option>
+                                        <option value="1">1 (strongly disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (strongly agree)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h3><strong>Question 8</strong></h3>
+                                    <h4>You care more about experiences then material things.
+                                    </h4>
+                                    <select class="chosen-select" id="q8">
+                                        <option value></option>
+                                        <option value="1">1 (strongly disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (strongly agree)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h3><strong>Question 9</strong></h3>
+                                    <h4>You believe respect for others is important.
+                                    </h4>
+                                    <select class="chosen-select" id="q9">
+                                        <option value></option>
+                                        <option value="1">1 (strongly disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (strongly agree)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h3><strong>Question 10</strong></h3>
+                                    <h4>You like to dance.
+                                    </h4>
+                                    <select class="chosen-select" id="q10">
+                                        <option value></option>
+                                        <option value="1">1 (strongly disagree)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (strongly agree)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <button type="submit" class="btn btn-primary submit" id="add-btn">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="resultsModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Best Match</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="matchName"></h2>
+                        <img id="matchPhoto" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fnyppagesix.files.wordpress.com%2F2019%2F03%2F031619-samuelljackson.jpg%3Fquality%3D90%26strip%3Dall%26w%3D618%26h%3D410%26crop%3D1&imgrefurl=https%3A%2F%2Fpagesix.com%2F2019%2F03%2F16%2Fsamuel-l-jackson-doesnt-care-if-he-loses-fans-over-trump-stance%2F&docid=2W2Tnp8B23oPiM&tbnid=EuXLpl2PMwq2xM%3A&vet=10ahUKEwiG7Mq1nLLkAhVwUN8KHfDqALcQMwh8KAEwAQ..i&w=618&h=410&bih=625&biw=1366&q=samuel%20l%20jackson&ved=0ahUKEwiG7Mq1nLLkAhVwUN8KHfDqALcQMwh8KAEwAQ&iact=mrc&uact=8">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+<script type="text/javascript">
+    $("#add-btn").on("click", function (event) {
+        console.log("Connected...");
+        event.preventDefault();
+        function validateForm() {
+            var isValid = true;
+            $(".form-control").each(function () {
+                if ($(this).val() === "") {
+                    isValid = false;
+                }
+            });
+            $(".chosen-select").each(function () {
+                if ($(this).val() === "") {
+                    isValid = false;
+                }
+            })
+            return isValid;
+        }
+        if (validateForm()) {
+            var userData = {
+                name: $('#name').val(),
+                photo: $('#photo').val(),
+                scores: [
+                    $('#q1').val(),
+                    $('#q2').val(),
+                    $('#q3').val(),
+                    $('#q4').val(),
+                    $('#q5').val(),
+                    $('#q6').val(),
+                    $('#q7').val(),
+                    $('#q8').val(),
+                    $('#q9').val(),
+                    $('#q10').val()
+                ]
+            };
+        var currentURL = window.location.origin;
+        $.post(currentURL + "/api/friends", userData, function (data) {
+            //console.log(data); //--- for testing
+            
+            $("#matchName").text(data.name);
+            console.log(data.name);
+            
+            $("#matchPhoto").attr("src", data.photo);
+            console.log(data.photo);
+            $("#resultsModal").modal("toggle");
+            //consol.log("working!!") //---- for testing
+        });
+    }
+        else {
+            alert("Fill in all the answers before submitting!")
+        }
+        return false;
+    });
+</script>
