@@ -31,3 +31,40 @@
 </body>
 
 </html>
+
+<!-- <script type="text/javascript">
+    function displayTables() {
+        $.get("/api/reserve", function (data) {
+            console.log(data);
+            if (data) {
+                for(var i = 0; i < data.length; i++){
+                    var tableCard = '<div class="card-body"><h2 id="name">Name: ' + data[i].name +'</h2><div id="stats"><h3><strong>Table: </strong> <span id="table">'+ data[i].uniqueId +'</span></h3><h3><strong>email: </strong> <span id="email">'+ data[i].email +'</span></h3><h3><strong>Phone: </strong> <span id="phone">'+ data[i].phone +'<span></h3></div></div>';
+                    
+                    $("#tableView").append(tableCard);
+                }
+            } else {
+                $("#name").text(
+                    "No Reservations");
+                $("#stats").hide();
+            };
+        });
+    }
+    function displayWaiting() {
+        $.get("/api/waitlist", function (data) {
+            console.log(data);
+            if (data) {
+                for(var i = 0; i < data.length; i++){
+                    var waitCard = '<div class="card-body"><h2 id="name">Name: ' + data[i].name +'</h2><div id="stats"><h3><strong>Table: </strong> <span id="table">'+ data[i].uniqueId +'</span></h3><h3><strong>email: </strong> <span id="email">'+ data[i].email +'</span></h3><h3><strong>Phone: </strong> <span id="phone">'+ data[i].phone +'<span></h3></div></div>';
+                    
+                    $("#waitView").append(waitCard);
+                }
+            } else {
+                $("#name").text(
+                    "No Reservations");
+                $("#stats").hide();
+            };
+        });
+    }
+    displayTables();
+    displayWaiting();
+</script> -->
